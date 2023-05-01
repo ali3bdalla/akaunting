@@ -10,7 +10,7 @@
         @stack('body_start')
 
         <div class="h-screen lg:h-auto bg-no-repeat bg-cover bg-center" style="background-image: url({{ asset('public/img/auth/login-bg.png') }});">
-            @if (! file_exists(public_path('js/install.min.js')))
+            {{-- @if (! file_exists(asset('js/install.min.js')))
                 <div class="relative w-full lg:max-w-7xl flex flex-col lg:flex-row items-center m-auto">
                     <div class="md:w-6/12 h-screen hidden lg:flex flex-col items-center justify-center">
                         <img src="{{ asset('public/img/empty_pages/transactions.png') }}" alt="" />
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                 </div>
-            @else
+            @else --}}
                 <div class="relative w-full lg:max-w-7xl flex items-center m-auto">
                     <x-layouts.auth.slider>
                         {!! $slider ?? '' !!}
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-            @endif
+            {{-- @endif --}}
         </div>
 
         @stack('body_end')

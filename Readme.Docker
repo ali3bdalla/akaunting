@@ -1,0 +1,27 @@
+```
+copy .env.example to .env
+```
+
+### note: make sure to fill DB_ details in .env file, password...act
+
+```
+docker compose up -d 
+```
+
+```
+docker exec -it sail-8.2/app bash
+```
+
+
+```
+
+composer install ; npm install ; npm run dev 
+php artisan key:generate
+```
+
+
+make sure to change the below command details to match the above .env exmple details
+```
+php artisan install --db-name="akaunting" --db-username="root" --db-password="root" --admin-email="admin@company.com" --admin-password="123456"
+
+```
